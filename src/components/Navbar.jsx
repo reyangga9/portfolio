@@ -41,6 +41,7 @@ const Navbar = () => {
       >
         <div>
           <h1 className="text-2xl font-sans ml-2">Anggara Ramadhan</h1>
+          <h1>Front-end Developer</h1>
         </div>
 
         <ul className="hidden md:flex">
