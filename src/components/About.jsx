@@ -1,0 +1,36 @@
+import React from "react";
+
+const About = () => {
+  return (
+    <div
+      name="about"
+      className="w-full pb-24   bg-gradient-to-b from-gray-700  to-gray-500 text-white"
+    >
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-black">
+            About
+          </p>
+        </div>
+
+        <p className=" text-gray-300 text-xl mt-20">
+          As a web developer, I find great joy in crafting innovative digital
+          experiences. With a passion for problem-solving and an eye for detail,
+          I thrive in the dynamic world of web development. What truly fuels my
+          enthusiasm is the continuous opportunity to learn and explore new
+          technologies.
+        </p>
+        <br />
+
+        <p className=" text-gray-300 text-xl">
+          Being a web developer allows me to combine my creativity with
+          technical skills to build cutting-edge websites and applications. From
+          designing visually appealing interfaces to implementing robust
+          functionalities, I enjoy every aspect of the development process.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default About;
