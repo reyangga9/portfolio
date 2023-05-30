@@ -27,7 +27,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className=" fixed w-full bg-gray-600   md:bg-transparent ">
+    <div className=" fixed w-full bg-gray-600 ">
       <div
         className=" flex  items-center 
       max-w-screen-lg 
