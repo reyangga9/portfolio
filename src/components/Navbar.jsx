@@ -27,13 +27,14 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="w-full bg-gray-600 ">
+    <div className=" fixed w-full bg-gray-600   md:bg-transparent ">
       <div
         className=" flex  items-center 
       max-w-screen-lg 
       justify-between
       text-white mx-auto
-      bg-gray-600
+      
+    
       
       
       
@@ -41,7 +42,6 @@ const Navbar = () => {
       >
         <div>
           <h1 className="text-2xl font-sans ml-2">Anggara Ramadhan</h1>
-          <h1>Front-end Developer</h1>
         </div>
 
         <ul className="hidden md:flex">
@@ -61,7 +61,11 @@ const Navbar = () => {
           onClick={() => setNav(!nav)}
           className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
         >
-          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+          {nav ? (
+            <FaTimes size={30} />
+          ) : (
+            <FaBars size={30} className="text-gray-800" />
+          )}
         </div>
 
         {nav && (
