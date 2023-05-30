@@ -4,6 +4,17 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [color, setColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 30) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
   const links = [
     {
       id: 1,
@@ -27,7 +38,11 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className=" fixed w-full bg-gray-600 ">
+    <div
+      className={
+        color ? "fixed w-full bg-gray-500 " : "fixed w-full bg-transparent"
+      }
+    >
       <div
         className=" flex  items-center 
       max-w-screen-lg 
