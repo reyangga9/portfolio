@@ -12,8 +12,8 @@ const Home = () => {
       <div className="  max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row gap-8 md:gap-0">
         <div className="flex flex-col ">
           <div className="pb-8">
-            <h2 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white">
-              I'm a Frontend Developer
+            <h2 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-white">
+              Hi, I'm a Frontend Developer
             </h2>
           </div>
           <p className="text-gray-300 py-4 max-w-md md:text-xl text-justify  ">

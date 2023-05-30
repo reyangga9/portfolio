@@ -40,7 +40,7 @@ const Navbar = () => {
       p-4"
       >
         <div>
-          <h1 className="text-5xl font-signature ml-2">Rey</h1>
+          <h1 className="text-2xl font-sans ml-2">Anggara Ramadhan</h1>
         </div>
 
         <ul className="hidden md:flex">
