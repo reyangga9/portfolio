@@ -26,14 +26,14 @@ const Contact = () => {
               name="name"
               required
               placeholder="Enter your name"
-              className="p-2  bg-transparent border-2 border-gray-400 bg-gray-200  placeholder-gray-800 rounded-md text-gray-800 focus:outline-none"
+              className="p-2  bg-transparent border-2 border-gray-400 bg-gray-100  placeholder-gray-800 rounded-md text-gray-800 focus:outline-none"
             />
             <input
               type="text"
               name="email"
               required
               placeholder="Enter your email"
-              className="p-2 my-2  mt-5 bg-transparent border-gray-400 bg-gray-200  placeholder-gray-800 border-2 rounded-md  text-gray-800 focus:outline-none"
+              className="p-2 my-2  mt-5 bg-transparent border-gray-400 bg-gray-100  placeholder-gray-800 border-2 rounded-md  text-gray-800 focus:outline-none"
             />
             <textarea
               name="message"
@@ -41,7 +41,7 @@ const Contact = () => {
               rows="10"
               required
               className="p-2 mt-5
-            bg-gray-200 border-2 border-gray-400 rounded-md text-gray-800  placeholder-gray-800 focus:outline-none"
+            bg-gray-100 border-2 border-gray-400 rounded-md text-gray-800  placeholder-gray-800 focus:outline-none"
             ></textarea>
             <button className="text-white bg-gradient-to-b from-neutral-600 to-neutral-900 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               {" "}
