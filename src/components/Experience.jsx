@@ -5,6 +5,8 @@ import tailwind from "../assets/tailwind.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
+import nodejs from "../assets/nodejs.png";
+import mongodb from "../assets/mongodb.png";
 
 const Experience = () => {
   const experience = [
@@ -44,19 +46,31 @@ const Experience = () => {
       title: "Github",
       style: "shadow-gray-400",
     },
+    {
+      id: 7,
+      src: nodejs,
+      title: "NodeJS",
+      style: "shadow-green-600",
+    },
+    {
+      id: 8,
+      src: mongodb,
+      title: "MongoDB",
+      style: "shadow-green-800",
+    },
   ];
 
   return (
     <div
-      name="experience"
-      className="pb-24 md:pt-0 bg-gradient-to-b from-gray-700  to-gray-500 w-full "
+      name="skills"
+      className=" pb-24 md:pt-0 bg-gradient-to-b  from-gray-200  to-gray-100 w-full "
     >
-      <div className="flex flex-col max-w-screen-lg  mx-auto h-full w-full justify-center p-4 text-white ">
+      <div className="flex flex-col max-w-screen-lg  mx-auto h-full w-full justify-center p-4 text-black ">
         <div>
-          <h2 className="text-4xl font-bold border-b-4 border-black p-2 inline">
-            Experience
+          <h2 className="text-4xl  font-bold border-b-4 border-black p-2 inline">
+            Skills
           </h2>
-          <p className="py-6 md:text-xl text-gray-300">
+          <p className=" mt-10 py-6 md:text-xl text-gray-800">
             These are the technologies i've worked with
           </p>
         </div>
@@ -70,7 +84,7 @@ const Experience = () => {
             <div
               key={link.id}
               className={
-                "shadow-md hover:scale-105 duration-500 py-2 rounded-lg bg-gray-800 lg:w-full h-52 items-center flex flex-col justify-center" +
+                "shadow-md hover:scale-105 duration-500 py-2 rounded-lg bg-gradient-to-r from-slate-200 to-zinc-200 lg:w-full h-52 items-center flex flex-col justify-center" +
                 " " +
                 link.style
               }

@@ -30,7 +30,7 @@ const Navbar = () => {
     },
     {
       id: 4,
-      link: "experience",
+      link: "skills",
     },
     {
       id: 5,
@@ -40,14 +40,16 @@ const Navbar = () => {
   return (
     <div
       className={
-        color ? "fixed w-full bg-gray-500 " : "fixed w-full bg-transparent"
+        color
+          ? "fixed w-full z-50 bg-gray-400 "
+          : "fixed  w-full bg-transparent"
       }
     >
       <div
         className=" flex  items-center 
       max-w-screen-lg 
       justify-between
-      text-white mx-auto
+      text-gray-800 mx-auto
       
     
       
@@ -63,7 +65,7 @@ const Navbar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="cursor-pointer  px-4 capitalize font-medium text-gray-300 hover:scale-105 duration-200"
+              className="cursor-pointer  px-4 capitalize font-medium text-gray-800 hover:scale-105 duration-200"
             >
               <Link to={link} smooth duration={500}>
                 {link}
