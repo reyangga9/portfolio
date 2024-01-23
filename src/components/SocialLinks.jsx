@@ -40,9 +40,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/CV_Anggara.pdf",
-      style: "rounded-br-md",
-      download: true,
+      href: "https://drive.google.com/file/d/1rkosYIlNnNjlKliXNTjy-WxgF0W8NxFr/view?usp=drive_link",
     },
   ];
 
@@ -53,7 +51,7 @@ const SocialLinks = () => {
           <li
             key={link.id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 bg-gray-500  ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 " +
+              "flex justify-between items-center w-40 h-14 px-4 bg-teal-500  ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 " +
               " " +
               link.style
             }

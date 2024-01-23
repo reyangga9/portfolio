@@ -1,32 +1,32 @@
 import React from "react";
-import hero from "../assets/heroImage.jpg";
+import hero from "../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div
-      name="home"
-      className=" w-full py-24 bg-gradient-to-b from-gray-100 to-gray-200"
-    >
-      <div className="  max-w-screen-lg mx-auto flex flex-col justify-center items-center h-full px-4 md:flex-row gap-8 md:gap-0">
-        <div className="flex flex-col ">
-          <div className="pb-8">
-            <h2 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
-              Hi, I'm a Full-stack Developer
+    <div name="home" className=" py-12  bg-white ">
+      <div className=" h-[600px] sm:h-[600px] md:h-[720px] flex flex-col-reverse justify-center items-center px-4 md:flex-row gap-8 md:gap-10">
+        <div className="flex flex-col md:w-1/2 ">
+          <div className="pb-8  ">
+            <h1 className="tracking-widest text-center md:text-left mb-4 md:mb-0">
+              MY NAME IS
+            </h1>
+            <h2 className=" text-center  md:text-left tracking-wide text-3xl sm:text-4xl lg:text-2xl font-bold text-gray-900">
+              Anggara <span className="text-teal-400">Ramadhan</span>
             </h2>
           </div>
-          <p className="text-gray-800 py-4 max-w-md md:text-xl text-justify  ">
-            I have one year of experience in building and designing software.
-            Currently, I enjoy working on web applications using technologies
-            like React and Tailwind
+          <p className="text-gray-800 mb-4 max-w-md md:text-xl text-justify  ">
+            I have experience in building and designing software, and I'm
+            currently passionate about working on web applications using
+            technologies like React and Tailwind.
           </p>
           <div>
             <Link
               to="portfolio"
               smooth
               duration={500}
-              className="group w-28 text-white flex items-center rounded-md bg-gradient-to-r from-slate-600 to-zinc-900 cursor-pointer p-2 px-4 "
+              className="group rounded-full w-36 text-black flex justify-center items-center text-center  border border-teal-300 hover:bg-teal-400 cursor-pointer p-2 px-4 mx-auto md:mx-0"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
@@ -36,11 +36,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="w-1/2 relative">
+          <div className="rounded-full overflow-hidden h-[90%] w-full mx-auto bg-teal-400 absolute top-10 left-1/2 transform -translate-x-1/2"></div>
           <img
             src={hero}
             alt="my profile"
-            className="rounded-2xl mx-auto w-full mt-20"
+            className="h-[90%] md:w-[60%] mx-auto pb-16 relative z-10"
           />
         </div>
       </div>

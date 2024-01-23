@@ -3,12 +3,15 @@ import ricknmorty from "../assets/portfolio/gambar1.jpg";
 import dota2heroes from "../assets/portfolio/gambar2.jpg";
 import landingpage from "../assets/portfolio/gambar3.jpg";
 import progateBootcamp from "../assets/portfolio/progateBootcamp.jpg";
+import foodGuardian from "../assets/portfolio/foodGuardian.png";
 import finalProjectGigih from "../assets/portfolio/finalProject_gigih.jpg";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Portfolio = () => {
   const portfolio = [
     {
       id: 1,
+      title: "Rick n Morty Wiki",
       src: ricknmorty,
       link: "https://mortyrick-wiki.netlify.app/",
       code: "https://github.com/reyangga9/react-wiki",
@@ -17,6 +20,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      title: "Hero dota 2",
       src: dota2heroes,
       link: "https://dota2heroez.netlify.app/",
       code: "https://github.com/reyangga9/DTS4A-33-final",
@@ -25,14 +29,16 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      title: "Landingpage slicing ",
       src: landingpage,
       link: "https://reyangga9.github.io/website-5-tailwind/",
       code: "https://github.com/reyangga9/website-5-tailwind",
       about:
-        "Built using TailwindCSS, this project was the first tailwind css that i created",
+        "Built using TailwindCSS, this project was the first slicing from figma",
     },
     {
       id: 4,
+      title: "Coffee shop",
       src: progateBootcamp,
       link: "https://reyangga9.github.io/website-4/",
       code: "https://github.com/reyangga9/website-4",
@@ -41,20 +47,30 @@ const Portfolio = () => {
     },
     {
       id: 5,
+      title: "Tokopedia Play Clone",
       src: finalProjectGigih,
-      link: "https://mellifluous-empanada-d76af6.netlify.app/videos",
+      link: "https://mellifluous-empanada-d76af6.netlify.app/",
       code: "https://github.com/reyangga9/finalterm_gigih_frontend",
       about:
         "Built using MongoDB and ReactJS, this project is for the final project at Gigih",
+    },
+    {
+      id: 6,
+      title: "FoodGuardian",
+      src: foodGuardian,
+      link: "https://sdg-12-b-frontend.vercel.app/recommendations",
+      code: "https://github.com/reyangga9/SDG-12-B-Frontend",
+      about:
+        "Built using Javascript, React, MongoDB, TailwindCSS and NodeJS this project was used for the capstone project",
     },
   ];
 
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b pb-24 from-gray-100  to-gray-200 w-full text-black"
+      className="bg-gradient-to-b mt-12 md:mt-0 pb-24  w-full text-black"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className=" p-4 mx-auto flex flex-col justify-center w-full h-full ">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-black">
             Portfolio
@@ -65,42 +81,51 @@ const Portfolio = () => {
         </div>
         {/* card */}
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 ">
           {portfolio.map((portfolio) => (
             <div
               key={portfolio.id}
-              className="shadow-md shadow-black
-           rounded-lg duration-200 hover:scale-105 bg-gradient-to-r from-slate-200 to-zinc-200"
+              className="border border-black
+           rounded-lg   "
             >
-              <div className="p-3 bg-gradient-to-r from-slate-200 to-zinc-200 rounded-lg h-52">
+              <div className="mb-2 h-48 rounded-lg  ">
                 <img
                   src={portfolio.src}
                   alt="reactSmooth"
-                  className=" rounded-lg w-full h-full"
+                  className=" p-1 w-full h-full"
                 />
               </div>
-              <div className=" p-5 text-justify ">
+              <div className=" p-5 text-justify md:h-48">
+                <h1 className="mb-6 text-xl font-semibold ">
+                  {portfolio.title}
+                </h1>
                 <p>{portfolio.about}</p>
               </div>
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 dutaion-200 hover:scale-110">
+                <button className="w-1/2 px-6 py-3 m-4 dutaion-200  ">
                   <a
                     href={portfolio.link}
                     target="_blank
                   "
-                    className=" bg-gradient-to-r from-slate-600 to-zinc-900 px-4 py-2 rounded-lg block text-white "
+                    className=" border border-teal-400  group rounded-full w-36 text-black flex justify-center items-center text-center   cursor-pointer p-2 px-4 mx-auto md:mx-0 "
                   >
                     Demo
+                    <span className="group-hover:-rotate-90 duration-300">
+                      <MdOutlineKeyboardArrowRight size={30} />
+                    </span>
                   </a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 dutaion-200 hover:scale-110">
+                <button className=" bottom-0 w-1/2 px-6 py-3 m-4 dutaion-200 ">
                   <a
                     href={portfolio.code}
                     target="_blank
                   "
-                    className=" bg-gradient-to-r from-slate-600 to-zinc-900 px-4 py-2 rounded-lg block text-white"
+                    className=" border border-teal-400 group rounded-full w-36 text-black flex justify-center items-center text-center   cursor-pointer p-2 px-4 mx-auto md:mx-0"
                   >
-                    Code
+                    Code{" "}
+                    <span className="group-hover:-rotate-90 duration-300">
+                      <MdOutlineKeyboardArrowRight size={30} />
+                    </span>
                   </a>
                 </button>
               </div>

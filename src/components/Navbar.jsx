@@ -4,17 +4,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [color, setColor] = useState(false);
 
-  const changeColor = () => {
-    if (window.scrollY >= 30) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
-
-  window.addEventListener("scroll", changeColor);
   const links = [
     {
       id: 1,
@@ -38,34 +28,22 @@ const Navbar = () => {
     },
   ];
   return (
-    <div
-      className={
-        color
-          ? "fixed w-full z-50 bg-gray-400 "
-          : "fixed  w-full bg-transparent"
-      }
-    >
+    <div className="">
       <div
         className=" flex  items-center 
-      max-w-screen-lg 
       justify-between
       text-gray-800 mx-auto
-      
-    
-      
-      
-      
-      p-4"
+     h-full py-6"
       >
         <div>
-          <h1 className="text-2xl font-sans ml-2">Anggara Ramadhan</h1>
+          <h1 className="text-2xl font-sans ml-2">AR</h1>
         </div>
 
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex ">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="cursor-pointer  px-4 capitalize font-medium text-gray-800 hover:scale-105 duration-200"
+              className="cursor-pointer  px-4 capitalize font-medium text-gray-800 hover:scale-105 duration-200 hover:bg-teal-500 hover:rounded-md"
             >
               <Link to={link} smooth duration={500}>
                 {link}

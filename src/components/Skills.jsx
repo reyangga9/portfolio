@@ -61,11 +61,8 @@ const Experience = () => {
   ];
 
   return (
-    <div
-      name="skills"
-      className=" pb-24 md:pt-0 bg-gradient-to-b  from-gray-200  to-gray-100 w-full "
-    >
-      <div className="flex flex-col max-w-screen-lg  mx-auto h-full w-full justify-center p-4 text-black ">
+    <div name="skills" className=" pb-24 md:pt-0 bg-gradient-to-b    w-full ">
+      <div className="flex flex-col  mx-auto h-full w-full justify-center p-4 text-black ">
         <div>
           <h2 className="text-4xl  font-bold border-b-4 border-black p-2 inline">
             Skills
@@ -84,7 +81,7 @@ const Experience = () => {
             <div
               key={link.id}
               className={
-                "shadow-md hover:scale-105 duration-500 py-2 rounded-lg bg-gradient-to-r from-slate-200 to-zinc-200 lg:w-full h-52 items-center flex flex-col justify-center" +
+                "shadow-md duration-500 py-2 rounded-lg bg-gradient-to-r  lg:w-full h-52 items-center flex flex-col justify-center" +
                 " " +
                 link.style
               }
