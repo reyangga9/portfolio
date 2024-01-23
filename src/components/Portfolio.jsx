@@ -81,7 +81,7 @@ const Portfolio = () => {
         </div>
         {/* card */}
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 ">
+        <div className=" sm:w-3/4 mx-auto  md:w-1/2 grid lg:grid-cols-3 lg:w-full  gap-8 px-12  ">
           {portfolio.map((portfolio) => (
             <div
               key={portfolio.id}
@@ -101,8 +101,8 @@ const Portfolio = () => {
                 </h1>
                 <p>{portfolio.about}</p>
               </div>
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 dutaion-200  ">
+              <div className="flex mx-auto items-center w-96 lg:w-full justify-between py-6 px-3">
+                <button className=" w-4">
                   <a
                     href={portfolio.link}
                     target="_blank
@@ -115,7 +115,7 @@ const Portfolio = () => {
                     </span>
                   </a>
                 </button>
-                <button className=" bottom-0 w-1/2 px-6 py-3 m-4 dutaion-200 ">
+                <button className=" ">
                   <a
                     href={portfolio.code}
                     target="_blank
